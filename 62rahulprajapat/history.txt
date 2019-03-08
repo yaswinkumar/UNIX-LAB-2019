@@ -1,0 +1,182 @@
+jecrc@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~$ sudo -s
+[sudo] password for jecrc: 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~# cd desktop
+bash: cd: desktop: No such file or directory
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~# cd Desktop
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# cat rahul.sh
+echo rahul
+
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ls
+adhoc.tar  docker  hello.sh  index.html  rahul.sh  Untitled Folder  web.tar
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# rahul.sh -la
+rahul.sh: command not found
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# la rahul.sh
+rahul.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ls -la
+total 471740
+drwxr-xr-x  4 jecrc jecrc      4096 Feb 20 16:45 .
+drwxr-xr-x 19 jecrc jecrc      4096 Feb 20 16:44 ..
+-rw-r--r--  1 jecrc jecrc 370321920 Aug 10  2018 adhoc.tar
+drwxrwxr-x  2 jecrc jecrc      4096 Aug 11  2018 docker
+-rw-rw-r--  1 jecrc jecrc         6 Jan 30 16:53 hello.sh
+-rw-r--r--  1 root  root         81 Aug 11  2018 index.html
+-rw-r--r--  1 root  root         12 Feb 20 16:45 rahul.sh
+drwxrwxr-x  2 jecrc jecrc      4096 Aug 11  2018 Untitled Folder
+-rw-r--r--  1 jecrc jecrc 112703488 Aug 11  2018 web.tar
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# chmod +x rahul.ls
+chmod: cannot access 'rahul.ls': No such file or directory
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# chmod +x rahul.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./x rahul.sh
+bash: ./x: No such file or directory
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# rahul.sh
+rahul.sh: command not found
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./ rahul.sh
+bash: ./: Is a directory
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul.sh
+rahul
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul2.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul2.sh
+bash: ./rahul2.sh: Permission denied
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ls -la
+total 471744
+drwxr-xr-x  4 jecrc jecrc      4096 Feb 20 11:24 .
+drwxr-xr-x 19 jecrc jecrc      4096 Feb 20  2019 ..
+-rw-r--r--  1 jecrc jecrc 370321920 Aug 10  2018 adhoc.tar
+drwxrwxr-x  2 jecrc jecrc      4096 Aug 11  2018 docker
+-rw-rw-r--  1 jecrc jecrc         6 Jan 30 16:53 hello.sh
+-rw-r--r--  1 root  root         81 Aug 11  2018 index.html
+-rw-r--r--  1 root  root        155 Feb 20 11:24 rahul2.sh
+-rwxr-xr-x  1 root  root         12 Feb 20  2019 rahul.sh
+drwxrwxr-x  2 jecrc jecrc      4096 Aug 11  2018 Untitled Folder
+-rw-r--r--  1 jecrc jecrc 112703488 Aug 11  2018 web.tar
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# chmod +x rahul2.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ls -latotal 471744
+drwxr-xr-x  4 jecrc jecrc      4096 Feb 20 11:24 .
+drwxr-xr-x 19 jecrc jecrc      4096 Feb 20  2019 ..
+-rw-r--r--  1 jecrc jecrc 370321920 Aug 10  2018 adhoc.tar
+drwxrwxr-x  2 jecrc jecrc      4096 Aug 11  2018 docker
+-rw-rw-r--  1 jecrc jecrc         6 Jan 30 16:53 hello.sh
+-rw-r--r--  1 root  root         81 Aug 11  2018 index.html
+-rwxr-xr-x  1 root  root        155 Feb 20 11:24 rahul2.sh
+-rwxr-xr-x  1 root  root         12 Feb 20  2019 rahul.sh
+drwxrwxr-x  2 jecrc jecrc      4096 Aug 11  2018 Untitled Folder
+-rw-r--r--  1 jecrc jecrc 112703488 Aug 11  2018 web.tar
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul2.sh
+enter your name
+rahul
+Enter two numbers
+5
+sum: '=': No such file or directory
+sum: 'expr $num1 + $num2': No such file or directory
+your name is =rahul
+The sum is = 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul2.sh
+enter your name
+rahul
+Enter two numbers
+5 6
+sum: '=': No such file or directory
+sum: 'expr $num1 + $num2': No such file or directory
+your name is =rahul
+The sum is = 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# cat rahul.sh
+echo rahul
+
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# cat rahul2.sh
+echo enter your name
+read string
+echo "Enter two numbers"
+read num1 num2
+sum = 'expr $num1 + $num2'
+echo "your name is =$string"
+echo "The sum is = $sum"
+
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul2.sh
+enter your name
+rahul
+Enter two numbers
+56
+sum: '=': No such file or directory
+sum: 'expr $num1 + $num2': No such file or directory
+your name is =rahul
+The sum is = 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul2.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul2.sh
+enter your name
+rahul
+Enter two numbers
+5
+expr: non-integer argument
+your name is =rahul
+The sum is = 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul2.sh
+enter your name
+rahul
+Enter two numbers
+5 6
+your name is =rahul
+The sum is = 11
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul3.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul3.sh
+bash: ./rahul3.sh: Permission denied
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# chmod +x rahul3.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul3.sh
+enter your name
+rahul
+Enter two numbers
+6 5
+your name is =rahul
+The sub is = 1
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul4.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# chmod +x rahul4.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul4.sh
+enter your name
+rahul
+Enter two numbers
+5 6
+expr: syntax error
+your name is =rahul
+The mul is = 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul4.sh
+enter your name
+rahul
+Enter two numbers
+5 6
+expr: syntax error
+your name is =rahul
+The mul is = 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul4.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul4.sh
+enter your name
+rahul
+Enter two numbers
+./rahul4.sh: line 11: syntax error: unexpected end of file
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul4.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul4.sh
+enter your name
+rahul
+Enter two numbers
+5 
+your name is =rahul
+0
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul4.sh
+enter your name
+5 6
+Enter two numbers
+6 6
+your name is =5 6
+36
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# nano rahul5.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# chmod +x rahul5.sh
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# ./rahul5.sh
+enter your name
+rahul
+Enter two numbers
+36 6
+your name is =rahul
+6
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# 
+root@jecrc-HCL-Desktop-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop# 
+
