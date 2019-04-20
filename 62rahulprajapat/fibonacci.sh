@@ -1,16 +1,16 @@
-echo "yaswin's programme"
-echo "enter values for said series:"
-read N
-echo "enter first number"
-read a
-echo "the fibonacci series is:"
-echo "read second number"
-read b
-for((i=0; i<N; i++))
+echo "terms "
+read n
+x=0
+y=1
+i=2
+echo "fibonacci"
+echo "$x"
+echo "$y"
+while [ $i -lt $n ]
 do
-echo "$a"
-fn=$((a+b))
-a=$b
-b=$fn
+i=$((i+1))
+z=$((x+y))
+echo "$z"
+x=$y
+y=$z
 done
-
